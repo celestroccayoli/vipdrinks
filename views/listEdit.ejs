@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/styles-listEdit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+
+    <title>Lista de productos</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="title">Administración de productos</h2>
+        <article class="box-add">
+            <div class="box-add">
+                <a href="/admin/create">
+                    <i class="far fa-plus-square"></i>
+                    <h4>Agregar nuevo producto</h4>
+                </a>
+            </div>
+        </article>
+        <%listProducts.forEach(product=> {%>
+            <article class="">
+                <div class="box-img">
+                    <img src="/images/imgProducts/<%= product.img%>" alt="">
+                </div>
+                <div class="main-product">
+
+                    
+                    <h4 class="nameProduct">
+                        <%=product.title%>
+                    </h4>
+
+                <div class="container-buttons">
+                    <button class="boton container-button">
+                    <a class="edit-button" href="/admin/editProduct/<%= product.idProducts%>">Editar producto</a>
+                    </button>
+
+
+                    <form method="POST" action="/admin/listEdit/<%= product.idProducts%>?_method=delete">
+                        <button class="boton delete-button" type="submit">Eliminar producto</button>
+                    </form>
+                </div>
+
+              
+            </article>
+            <%})%>
+
+<h2><a class="back" href="/"> Volver al inicio </a></h2>
+
+
+    </main>
+
+</body>
+
+</html>

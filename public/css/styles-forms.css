@@ -1,0 +1,263 @@
+/* START UNIVERSAL */
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* END UNIVERSAL*/
+
+
+/* START CUERPO EN GRAL */
+div{
+    display: block;
+}
+
+
+main{
+    display: block;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li{
+    text-decoration: none;
+}
+h5 {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    font-weight: 800;
+}
+/* END CUERPO EN GRAL */
+
+/* START FORMULARIO*/
+.container-user-login{
+background: white;
+}
+.container-admin-login{
+background: white;
+}
+.section-login p,
+.section-register p{
+    text-align: center;
+}
+.login-title{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+.login-admin-title{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+.section-login,
+.section-register{
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 130px;
+    color:rgb(20, 20, 20);
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(211, 211, 211, 0.514);
+    font-size:18px;
+    margin: 4px;
+    border-radius: 15px;
+}
+button.boton-ingreso,
+button.boton-register{
+    width: 100%;
+    background-color: lightgray;
+    padding: 5px;
+    color: rgb(20, 20, 20);
+    margin: 4px;
+    font-size:18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 1px lightgray;
+    border-radius: 15px;
+}
+button:hover {
+    background-color: white;
+    font-weight: 900;
+    color: #d5b38b;
+    border: 1px solid #d5b38b;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 15px;
+    font-size:20px
+}
+
+main.login-form{
+    display: block;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+form.section-login,
+form.section-register{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    transition: all 450ms ease
+}
+div.admin-password{
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(240, 240, 240);
+    width: 300px;
+    border: solid 1px gray;
+    padding: 5px;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+}
+h6 .admin-button{
+    margin-bottom: 10px auto;
+    cursor: pointer;
+}
+
+input#password-admin{
+    border: none;
+    background-color: tomato;
+}
+
+input#img{
+    margin-top: 12px;
+}
+
+  /* Switch 1 Specific Styles Start */
+
+  .wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+  }
+  .switch_box{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .remember{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end
+  }
+  
+ 
+  input[type="checkbox"].switch_1{
+
+    font-size: 15px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 3.5em;
+    height: 1.5em;
+    background: #ddd;
+    border-radius: 3em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    }
+    
+    input[type="checkbox"].switch_1:checked{
+    background: #d5b38b;
+    }
+    
+    input[type="checkbox"].switch_1:after{
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+            box-shadow: 0 0 .25em rgba(0,0,0,.3);
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    }
+    
+    input[type="checkbox"].switch_1:checked:after{
+    left: calc(100% - 1.5em);
+    }
+    
+  /* Switch 1 Specific Style End */
+
+
+.box-extra{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+/* END FORMULARIO*/
+
+/* START FORM VALIDATIONS*/
+
+input.is-invalid{
+    border: 2px solid crimson;
+}
+.text-validation{
+    color: crimson;
+    font-size: small;
+}
+
+h4.profilename{
+    color: rgb(20, 20, 20);
+}
+#box-img{
+    max-width: 300px;
+    border-radius: 50%;
+    background: rgb(240, 240, 240);
+}
+
+/* START MEDIA QUERIES */
+
+@media(min-width: 0px){
+}
+
+@media(min-height: 450px){
+}
+
+@media(min-width: 768px){
+}
+main.login-form{
+    margin-top:1%;
+}
+h2.logo{
+    position: relative;
+}
+.section-login{
+    margin-top: 10%;
+}
+
+@media(min-width: 1024px){
+ .section-login,
+.section-register{
+    margin: 10px auto;
+}
+main.login-form{
+    margin: 0 auto;
+}
+}
